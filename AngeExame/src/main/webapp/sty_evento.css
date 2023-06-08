@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*font-family: 'Bebas Neue', cursive;*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: nome;
+	list-style: nome;
+}
+
+body {
+	font-family: Ariel, Helvetica, sans-serif;
+	background-color:  #161815;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	background: linear-gradient(
+	rgba(0, 0, 0, 0.4),
+	rgba(0, 0, 0, 0.4)),
+	url(imagen/fondo.gif);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 70vh;
+	display: flex;
+	align-items: center;
+}
+
+.menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1000;
+}
+
+.logo{
+	font-size: 24px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.menu .navdar ul li{
+	position: relative;
+	float: left;
+}
+
+.menu .navdar ul li a{
+	font-size: 18px;
+	padding: 20px;
+	color: #FFFFFF;
+	display: block;
+}
+
+.menu .navdar ul li a:hover {
+	color: #13975E;
+}
+
+#menu{
+	display: none;
+}
+
+.menu-icono{
+	width: 25px;
+}
+
+.menu label{
+	cursor: pointer;
+	display: none;
+}
+
+.header-content{
+	display: flex;
+	align-items: center;
+}
+
+.header-txt{
+	width: 80%;
+}
+
+.header-txt h1{
+	font-size: 120px;
+	line-height: 150px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-family: 'Bebas Neue', cursive;
+	margin-bottom: 25px;
+}
+
+.header-txt p{
+	font-size: 18px;
+	color: #C4C4C4;
+	margin-bottom: 35px;
+	border-left: 1px solid #FFFFFF;
+	padding-left: 15px;
+}
+
+.btn-1{
+	display: inline-block;
+	padding: 12px 35px;
+	background-color: #13975E;
+	border-radius: 10px;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: 'Bebas Neue', cursive;
+	margin-top: 25px;
+}
+
+.btn-1:hover {
+	background-color: #19C67B;
+	
+}
+.footer-txt{
+	text-align: center;
+	padding: 20px;
+	background-color: #070707;
+}
+
+.slider{
+width: 800px;
+height: 500px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.slides{
+width: 500%;
+height: 500px;
+display: flex;
+}
+
+.slides input{
+display: none;
+}
+
+.slide{
+width: 20%;
+transition: 2s;
+}
+
+.slide img{
+width: 800px;
+height: 500px;
+}
+
+.navigation-manual{
+position: absolute;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+}
+
+
+.manual-btn{
+border: 2px solid #FFFFFF;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+margin-right: 40px;
+}
+
+.manual-btn:hover{
+background: #FFFFFF;
+}
+
+#radio1:checked ~ .first{
+margin-left: 0;
+}
+#radio2:checked ~ .first{
+margin-left: -20%
+}
+#radio3:checked ~ .first{
+margin-left: -40%;
+}
+#radio4:checked ~ .first{
+margin-left: -60%;
+}
+
+.navigation-auto{
+position: absolute;
+display: flex;
+width: 800px;
+justify-content: center;
+margin-top: 460px;
+}
+
+.navigation-auto div{
+border: 2px solid #FFFFFF;
+padding: 5px;
+vorder-radius: 10px;
+transition: 1s;
+}
+
+.navigation-auto div{
+margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+background: #FFFFFF;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+background: #FFFFFF;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+background: #FFFFFF;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+background: #FFFFFF;
+}
+
+
+
+
+
+
+
+.slider{
+width: 800px;
+height: 500px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.slides{
+width: 500%;
+height: 500px;
+display: flex;
+}
+
+.slides input{
+display: none;
+}
+
+.slide{
+width: 20%;
+transition: 2s;
+}
+
+.slide img{
+width: 800px;
+height: 500px;
+}
+
+.navigation-manual{
+position: absolute;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+}
+
+
+.manual-btn{
+border: 2px solid #FFFFFF;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+margin-right: 40px;
+}
+
+.manual-btn:hover{
+background: #FFFFFF;
+}
+
+#radio1_2:checked ~ .first{
+margin-left: 0;
+}
+#radio2_2:checked ~ .first{
+margin-left: -20%
+}
+#radio3_2:checked ~ .first{
+margin-left: -40%;
+}
+#radio4_2:checked ~ .first{
+margin-left: -60%;
+}
+
+.navigation-auto_2{
+position: absolute;
+display: flex;
+width: 800px;
+justify-content: center;
+margin-top: 460px;
+}
+
+.navigation-auto_2 div{
+border: 2px solid #FFFFFF;
+padding: 5px;
+vorder-radius: 10px;
+transition: 1s;
+}
+
+.navigation-auto_2 div{
+margin-right: 40px;
+}
+
+#radio1_2:checked ~ .navigation-auto .auto-btn1_2{
+background: #FFFFFF;
+}
+#radio2_2:checked ~ .navigation-auto .auto-btn2_2{
+background: #FFFFFF;
+}
+#radio3_2:checked ~ .navigation-auto .auto-btn3_2{
+background: #FFFFFF;
+}
+#radio4_2:checked ~ .navigation-auto .auto-btn4_2{
+background: #FFFFFF;
+}
+
+
+
+
+.slider{
+width: 800px;
+height: 500px;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.slides{
+width: 500%;
+height: 500px;
+display: flex;
+}
+
+.slides input{
+display: none;
+}
+
+.slide{
+width: 20%;
+transition: 2s;
+}
+
+.slide img{
+width: 800px;
+height: 500px;
+}
+
+.navigation-manual{
+position: absolute;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+}
+
+
+.manual-btn{
+border: 2px solid #FFFFFF;
+padding: 5px;
+border-radius: 10px;
+cursor: pointer;
+transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+margin-right: 40px;
+}
+
+.manual-btn:hover{
+background: #FFFFFF;
+}
+
+#radio1_2_3:checked ~ .first{
+margin-left: 0;
+}
+#radio2_2_3:checked ~ .first{
+margin-left: -20%
+}
+#radio3_2_3:checked ~ .first{
+margin-left: -40%;
+}
+#radio4_2_3:checked ~ .first{
+margin-left: -60%;
+}
+
+.navigation-auto_2{
+position: absolute;
+display: flex;
+width: 800px;
+justify-content: center;
+margin-top: 460px;
+}
+
+.navigation-auto_2 div{
+border: 2px solid #FFFFFF;
+padding: 5px;
+vorder-radius: 10px;
+transition: 1s;
+}
+
+.navigation-auto_2 div{
+margin-right: 40px;
+}
+
+#radio1_2_3:checked ~ .navigation-auto .auto-btn1_2_3{
+background: #FFFFFF;
+}
+#radio2_2_3:checked ~ .navigation-auto .auto-btn2_2_3{
+background: #FFFFFF;
+}
+#radio3_2_3:checked ~ .navigation-auto .auto-btn3_2_3{
+background: #FFFFFF;
+}
+#radio4_2_3:checked ~ .navigation-auto .auto-btn4_2_3{
+background: #FFFFFF;
+}
